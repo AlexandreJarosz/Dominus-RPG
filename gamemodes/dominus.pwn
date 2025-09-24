@@ -1,5 +1,8 @@
 #include <a_samp>
+#include <fixes>
+#include <sscanf2>
 #include <a_mysql>
+#include <memory>
 
 #define db_host "localhost"
 #define db_username "root"
@@ -17,7 +20,8 @@ public OnGameModeInit() {
         new rconCmd[] = "exit";
         SendRconCommand(rconCmd);
     }
-    
+
     SetGameModeText("RPG");
+    EnableStuntBonusForAll(false);
     return 1;
 }
