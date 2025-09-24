@@ -4,17 +4,18 @@
 #include <a_mysql>
 #include <memory>
 
-#define db_host "localhost"
-#define db_username "root"
-#define db_password ""
-#define db_name "dominus"
+new MySQL:mysql_connection, Pointer:mainPlayer_ptr;
 
-new MySQL:mysql_connection;
+forward Pointer:GetEndList(Pointer:list_ptr, index);
+
+#include <player>
+#include <useful>
+
 
 main() {}
 
 public OnGameModeInit() {
-    mysql_connection = mysql_connect(db_host, db_username, db_password, db_name);
+    mysql_connection = mysql_connect("localhost", "root", "", "dominus");
     if (mysql_errno() != 0) {
         print("Não foi possível conectar no banco de dados.");
         new rconCmd[] = "exit";
