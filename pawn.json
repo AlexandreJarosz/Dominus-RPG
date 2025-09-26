@@ -1,0 +1,17 @@
+{
+	"user": "Jarosz",
+	"repo": "MemoryAccessDominus",
+	"entry": "gamemodes\\dominus.pwn",
+	"output": "gamemodes/gamemodes\\dominus.amx",
+	"dependencies": [
+		"pawn-lang/samp-stdlib",
+		"BigETI/pawn-memory:2.0.1"
+	],
+	"local": true,
+	"runtime": {
+		"version": "0.3.7",
+		"mode": "server",
+		"rcon_password": "password",
+		"port": 7777
+	}
+}

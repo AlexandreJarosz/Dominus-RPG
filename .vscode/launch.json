@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Build Dominus",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "C:\\Windows\\System32\\cmd.exe",
+      "args": [
+        "/c",
+        "${workspaceFolder}\\pawno\\pawncc.exe",
+        "${workspaceFolder}\\gamemodes\\dominus.pwn",
+        "-D${workspaceFolder}\\gamemodes",
+        "-;+",
+        "-(+",
+        "-d3",
+        "-i${workspaceFolder}\\pawno\\include",
+        "-i${workspaceFolder}\\includes"
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "stopAtEntry": false,
+      "preLaunchTask": "build"
+    }
+  ]
+}

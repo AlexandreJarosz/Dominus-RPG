@@ -1,0 +1,28 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "process",
+      "command": "${workspaceFolder}\\pawno\\pawncc.exe",
+      "args": [
+        "${workspaceFolder}\\gamemodes\\dominus.pwn",
+        "-D${workspaceFolder}\\gamemodes",
+        "-;+",
+        "-(+",
+        "-d3",
+        "-i${workspaceFolder}\\pawno\\include",
+        "-i${workspaceFolder}\\includes"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      },
+      "problemMatcher": "$pawncc"
+    }
+  ]
+}
