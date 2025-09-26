@@ -7,8 +7,12 @@
 new MySQL:mysql_connection, Pointer:mainPlayer_ptr;
 
 forward Pointer:GetEndList(Pointer:list_ptr, index);
+forward Pointer:MEM_new_string(const str[]);
+forward Pointer:GetElementList(Pointer:list_ptr, next, element1, element2, const option[]);
 
+#include <color>
 #include <player>
+#include <server>
 #include <useful>
 
 
